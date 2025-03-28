@@ -3,23 +3,26 @@ import Sidebar from "./Sidebar.jsx"
 import Video from './Video'
 import { useAuth } from '../Context/AuthProvider.jsx'
 
-const Home = () => {
+function Home(){
     const{data}=useAuth()
-    console.log(data)
+    console.log(data);
   return (
-    <div className='flex' >
-        <Sidebar/>
-        <div>
-            {
-                    data.map((item)=>{
-                        if(item.type!=="video") return false;
-                        return(
-                            <Video key={item.id} video={item?.video}/>
-                        )
-                 })
-            }
-        </div>
+   <div className='flex'>
+    <Sidebar/>
+    <div>
+
+    {
+      // data.map((item)=>{
+      //   if (item.type!=="video") return false; 
+      //   return(
+      //     <Video key={item.id} video={item?.video}/>
+      //   )
+        
+      //   })
+      <Video/>
+    }
     </div>
+   </div>
   )
 }
 
