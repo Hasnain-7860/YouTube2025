@@ -14,6 +14,7 @@ import salman1 from '../assets/salman1.webp'
 import singer from '../assets/singer.jpg'
 import salman from '../assets/salman.png'
 import codeharry from '../assets/codeharry.webp'
+import PlayingVideo from './PlayingVideo';
 
 
 
@@ -30,14 +31,15 @@ import codeharry from '../assets/codeharry.webp'
 const Video = () => {
   
   return (
-    <div className='mt-20 grid grid-cols-3 gap-14 '>
+    <div className='mt-20 grid grid-cols-1 md:grid-cols-2 gap-14 lg:grid-cols-4 '>
        
-       <div className=''>
+       <Link to={<Video/>}><div className=''>
         <img className='rounded-md' src={song2} alt="" /> 
         <h2>Best channel to learn coding that help you to be a web devloper</h2>
         <h3>Greatstack</h3>
         <p>15k views & bull; 2 days ago</p>
     </div>
+    </Link>
     <div className='card'>
         <img className='rounded-md' src={thumbnail8} alt="" /> 
         <h2>Best channel to learn coding that help you to be a web devloper</h2>

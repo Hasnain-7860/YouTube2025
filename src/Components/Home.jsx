@@ -7,7 +7,7 @@ function Home(){
     const{data}=useAuth()
     console.log(data);
   return (
-   <div className='flex'>
+   <div className='flex p-5'>
     <Sidebar/>
     <div>
 

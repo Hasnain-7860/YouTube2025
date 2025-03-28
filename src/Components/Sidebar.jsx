@@ -165,7 +165,7 @@ const Sidebar = () => {
       
     ]
   return (
-    <div className='px-6 w-[15%]  h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden mt-16'>
+    <div className='  px-0 w-[0%]    lg:px-6  lg:w-[20%]  h-[calc(100vh-6.625rem)] overflow-y-scroll overflow-x-hidden mt-16'>
         <div className='space-y-3  items-center'>
           {sidebarItems.map((item)=>{
             return(
